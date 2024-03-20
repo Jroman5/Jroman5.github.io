@@ -36,7 +36,7 @@ export function Contact(){
         <h3 className = {inter.className}>Contact Me</h3>
         <br/>
         <p className = {inter.className}>Feel free to contact me via email at: <a href="mailto:jonroman2525@gmail.com">Jonroman2525@gmail.com</a></p>
-        <hr width = "100%"/>
+        <hr className= "separator"/>
       </div>
     </>
   )
@@ -55,7 +55,7 @@ export function AboutMe() {
          I currently have a year of experience in software development in an agile environment and am looking to continue improving in my journey as a software developer.
       </p>
       <br/>
-      <hr width="100%"/>
+      <hr className= "separator"/>
     </div>
     </>
   )
@@ -69,7 +69,7 @@ export function Skills(){
       <h4 className={inter.className}> Technologies I have Worked With:</h4>
       <p className={inter.className}>Java, Python, Scala, Bash, SQL, PostgreSQL, C, JavaScript, React,  Postman, Apache Spark, Mockito, Jira </p>
       <br />
-      <hr width = "100%" />
+      <hr className= "separator"/>
       </div>
       
       
