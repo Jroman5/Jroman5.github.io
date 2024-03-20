@@ -97,7 +97,7 @@ export function Cards(){
     <div className={styles.grid}>
           <a
             href="https://github.com/Jroman5"
-            // https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -106,13 +106,13 @@ export function Cards(){
               GitHub <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
+
             </p>
           </a>
 
           <a
             href="https://www.linkedin.com/in/jonathanroman25/"
-            // "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -121,13 +121,13 @@ export function Cards(){
               LinkedIn <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+              
             </p>
           </a>
 
           <a
             href="https://drive.google.com/file/d/1yTV05NwFS2hRAc-z25UtWwdN2K66KkqT/view?usp=sharing"
-            // "https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -136,13 +136,13 @@ export function Cards(){
               Resume <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+              
             </p>
           </a>
 
           <a
             href="mailto:jonroman2525@gmail.com"
-            // "https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+           
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -151,8 +151,7 @@ export function Cards(){
               Contact Me <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
+              
             </p>
           </a>
           
