@@ -76,17 +76,54 @@ export function Skills(){
     </>
   )
 }
-
+function mobileNavbarOnClick(){
+    var x = document.getElementById("myLinks");
+    if(x === null){
+      return;
+    }
+    if (x.style.display === "grid") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "grid";
+    }
+  }
 export function Navbar(){
   return(
   <>
-      <ul className='navbar'>
-        <li className='nav-item' ><a href="#home">Home</a></li>
-        <li className='nav-item'><a href="#aboutMe">About</a></li>
-        <li className='nav-item'><a href="#skills">Services</a></li>
-        <li className='nav-item'><a href="#contact">Contact</a></li>
-        <li className='nav-item'><a href="https://drive.google.com/file/d/1yTV05NwFS2hRAc-z25UtWwdN2K66KkqT/view?usp=sharing" target="_blank"> Resume</a></li>
-      </ul>
+    <div id="myLinks" >
+      <a href="#home">Home</a>
+      <a href="#aboutMe">About</a>
+      <a href="#skills">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="https://drive.google.com/file/d/1yTV05NwFS2hRAc-z25UtWwdN2K66KkqT/view?usp=sharing" target="_blank"> Resume</a>
+    </div>
+    <div className='navbar'>
+      <svg viewBox="0 0 100 80" width="40" height="40" href="javascript:void(0);"  onClick={mobileNavbarOnClick}>
+          <rect width="100" height="10"></rect>
+          <rect y="30" width="100" height="10"></rect>
+          <rect y="60" width="100" height="10"></rect>
+      </svg> 
+      <a className='nav-item' href="#home">Home</a>
+      <a className='nav-item' href="#aboutMe">About</a>
+      <a className='nav-item' href="#skills">Services</a>
+      <a className='nav-item' href="#contact">Contact</a>
+      <a className='nav-item' href="https://drive.google.com/file/d/1yTV05NwFS2hRAc-z25UtWwdN2K66KkqT/view?usp=sharing" target="_blank"> Resume</a>
+        
+          
+              
+    </div>
+
+          
+          
+        
+        
+          
+        
+      
+      <div className=''>
+
+          
+      </div>
   </>
   )
 }

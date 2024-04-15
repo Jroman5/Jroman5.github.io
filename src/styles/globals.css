@@ -108,44 +108,70 @@ a {
   display:flex;
   justify-content: end;
   align-items: stretch; 
+  padding: 1px;
   
   /* margin:5px; */
   top:0;
-  z-index: 999;
+  z-index: 99;
   overflow: hidden;
+  height: 4rem;
   width: 100%;
   /* border-radius: 5px;  */
   border: 1px solid #000000;
   
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.nav-item{
+.nav-item {
   font-family: var(--font-mono);
-  display:inline;
+  /* display:inline; */
   position: relative;
-  padding: 5px;
-  margin:2;
+  padding: 15px;
+  margin: 1px;
+  border: #000000;
+  display: flex;   /* change to none to remove navbar
+
+  /* z-index: 100; */
 }
-.nav-item a {
+
+svg{
+  display: none;
+}
+#myLinks{
+  display:none;
+  width: 80%;
+  background-color: #000000;
+  color: white;
+  z-index:101;
+  top: 0px;
+  left:50px;
+  position:sticky
+}
+
+
+
+
+.nav-item {
   float:right;
   font-family: var(--font-mono);
   font-weight: normal;
   
   background-color: rgb(255, 255, 255);
   text-align: center;
-  padding: 25px;
+  
+  
+  /* padding: 25px; */
   /* padding-right: ; */
   
 }
 
 
 
-.nav-item a:hover {
+
+
+.nav-item:hover {
   background: rgb(235, 225, 225);
   /* color: rgb(246, 249, 250);  */
-  
-  
 }
 
 
@@ -164,11 +190,60 @@ ul.navbar li a {
 
 /* ul.navbar:last-child {
   margin-right:0;
-
 } */
 
 @media (prefers-color-scheme: light) {
   html {
     color-scheme: light;
+  }
+}
+
+@media (max-width: 1200px){
+  svg{
+    position: absolute;
+    left:0;
+    top:0;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    z-index: 98;
+    /* background-color: #000000; */
+  
+    /* fill: white; */
+  }
+
+  #myLinks{
+
+  }
+  .mobile-nav-item{
+    padding: 15px;
+  margin: 1px;
+  border: #000000;
+  display: flex;   
+  
+  }
+  .mobile-nav-item:hover{
+    background-color: white;
+    color: white;
+  }
+  
+  svg:hover{
+    
+    background-color:black;
+    fill:white;
+  }
+  .navbar{
+  height: 4rem;
+  width: 100%;
+  }
+
+  .nav-item{
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) {
+  #myLinks{
+    display: none;
   }
 }
